@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: lightsalmon;
+    background-image: linear-gradient(#4253eb, rgb(47, 2, 58));
     font-family: 'Roboto', sans-serif;
 }
 /* cabecera y navegador */
@@ -73,6 +73,15 @@ p{
 }
 
 /* donaciones */
+.todogrid{
+    display: grid;
+    grid-template-areas:"maindonaciones"
+                        "donacionformula"
+                        "recuerdo"
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
 .laquetiro{
     margin: 18px;
     margin-bottom: 10px;
@@ -81,12 +90,20 @@ p{
 .titulopago{
     padding-left: 58px;
 }
+.donacionformula{
+    display: grid;
+    grid-template-rows: auto;
+    margin: 1% 29% 1% 26%;
+}
 .donacion{
     border: 1px black solid;
-    margin: 23px 326px;
     font-size: 20px;
-    height: 600px;
+    height: auto;
+    width: 100%;
     border-radius: 20px;
+    display: grid;
+    grid-template-areas: auto;
+    position:relative;
 }
 .donacion .facturacion{
     display: flex;
@@ -96,30 +113,38 @@ p{
     justify-content: space-between;
     padding-left: 20px;
 }
+.facturacion div{
+    display: flex;
+}
+.botonform{
+    padding-bottom: 0%;
+    margin-bottom: 3%;
+}
 .recuerdo p{
     padding: 13px;
 }
 
+
 /* reseñas */
 .reviews{
-    margin: 20px;
+    margin: 3%;
     display: grid;
-    grid-template-columns: 222px auto;
-    grid-template-rows: 350px 350px 350px 350px 350px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 15% 16% 18% 19% 18% auto;
+    padding: 0% 6% 0% 2%;
+    margin-bottom: auto;
 }
 .reviews p{
-    padding-top: 3px;
-    padding-left: 24px;
-    padding-right: 60px;
+    padding: 1% 0% 0% 6%;
     letter-spacing: 1px;
     word-spacing: 1px;
 }
 .reviews h3{
-    padding-bottom: 10px;
+    padding:1% 0% 0% 2%;
 }
 /* contacto */
 .maincontact{
-    margin: 50px 315px;
+    margin: 2% 32%;
     letter-spacing: 1px;
     word-spacing: 1px;
 }
@@ -133,37 +158,35 @@ p{
 .listacontacto li{
     padding-top: 10px;
 }
-
 .formcontact{
-    margin-bottom: 16px;
-    margin-left: 6px;
-    margin-right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0% 0% 0% 0%;
 }
-.formcontact form{
+.formu{
     border: 1px black solid;
-    border-radius: 25px;
-    padding: 25px;
+    border-radius: 9%;
+    margin: 2% 0% 1% 0%;
+    padding: 1% 0% 3% 0%;
 }
-
-.formcontact .emaillabel{
-    margin-left: 5px;
+.formu div{
+    padding: 3% 5% 0% 4%;
 }
 .formcontact .email{
-    width: 490px;
+    width: 100%;
 }
 .formcontact .nameform{
     display: grid;
-    grid-template-columns: 280px auto;
+    grid-template-columns: 50% 45%;
 }
-.formcontact .nombre{
-    width: 185px;
-}
-.formcontact .lastnameform{
-    width: 185px;
+.formcontact .nameform input{
+    width: 100%;
 }
 .formcontact .mensaje{
     display: grid;
-    grid-template-columns: 540px;
+    grid-template-columns: 100%;
+    grid-template-rows: 20%;
 }
 /* biografia */
 .mainbiograph{
@@ -184,13 +207,17 @@ p{
     width: 100%;
     height: 100px;
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 60% 40%;
 }
 .copy{
     padding-top: 67px;
     padding-left: 30px;
+    display: flex;
 }
 
 .linksreferidos{
     padding-top: 30px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
 }
