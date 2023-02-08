@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Explora&family=Roboto:ital,wght@0,100;1,100&display=swap');
+*{
+    padding: 0%;
+    margin: 0px;
+}
+
+body{
+    background-color: lightsalmon;
+    font-family: 'Roboto', sans-serif;
+}
+/* cabecera y navegador */
+.titulobarra{
+    padding: 19px;
+    letter-spacing: 1px;
+    background-color: azure;
+    font-family: 'Explora', cursive;
+}
+.titulobarra a{
+    text-decoration: none;
+}
+.titulobarra a h4{
+    color: black;
+    font-size: 28px;
+}
+
+.navcabecera{
+    background-color: black;
+    padding: 11px;
+    padding-left: 35px;
+}
+
+.navcabecera ul li{
+        display: inline-block;
+        letter-spacing: 3px;
+}
+
+.uwu{
+    color: white;
+    padding: 12px;
+}
+
+/* home */
+
+.mainhome{
+    margin: 40px 190px;
+    padding: 0px;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.mainhome h2{
+    padding: 25px 25px;
+    color: black;
+}
+p{
+    color: azure;
+}
+
+.fraseintro{
+    font-style: italic;
+    padding-top: 30px;
+    font-size: 19px;
+}
+.fraseintro p{
+    color: rgb(98, 99, 104);
+    margin: 0px 156px;
+}
+.presentacion{
+    text-align: center;
+    padding-top: 63px;
+    border: 10px;
+    margin: 0px;
+}
+
+/* donaciones */
+.laquetiro{
+    margin: 18px;
+    margin-bottom: 10px;
+    padding-right: 500px;
+}
+.titulopago{
+    padding-left: 58px;
+}
+.donacion{
+    border: 1px black solid;
+    margin: 23px 326px;
+    font-size: 20px;
+    height: 600px;
+    border-radius: 20px;
+}
+.donacion .facturacion{
+    display: flex;
+    height: 580px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.recuerdo p{
+    padding: 13px;
+}
+
+/* reseñas */
+.reviews{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 222px auto;
+    grid-template-rows: 350px 350px 350px 350px 350px;
+}
+.reviews p{
+    padding-top: 3px;
+    padding-left: 24px;
+    padding-right: 60px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.reviews h3{
+    padding-bottom: 10px;
+}
+/* contacto */
+.maincontact{
+    margin: 50px 315px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.listacontacto{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+.listacontacto li{
+    padding-top: 10px;
+}
+
+.formcontact{
+    margin-bottom: 16px;
+    margin-left: 6px;
+    margin-right: 0px;
+}
+.formcontact form{
+    border: 1px black solid;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.formcontact .emaillabel{
+    margin-left: 5px;
+}
+.formcontact .email{
+    width: 490px;
+}
+.formcontact .nameform{
+    display: grid;
+    grid-template-columns: 280px auto;
+}
+.formcontact .nombre{
+    width: 185px;
+}
+.formcontact .lastnameform{
+    width: 185px;
+}
+.formcontact .mensaje{
+    display: grid;
+    grid-template-columns: 540px;
+}
+/* biografia */
+.mainbiograph{
+    margin: 40px 190px;
+    padding: 0px;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.mainbiograph h3{
+    padding: 12px 0px;
+}
+
+/* pie de pagina */
+.pie{
+    background-color: black;
+    color: azure;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.copy{
+    padding-top: 67px;
+    padding-left: 30px;
+}
+
+.linksreferidos{
+    padding-top: 30px;
+}
