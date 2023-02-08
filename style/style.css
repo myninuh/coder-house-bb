@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient(#4253eb, rgb(47, 2, 58));
+    background-image: linear-gradient(#a39471, rgb(172, 113, 74));
     font-family: 'Roboto', sans-serif;
 }
 /* cabecera y navegador */
@@ -73,33 +73,25 @@ p{
 }
 
 /* donaciones */
-.todogrid{
-    display: grid;
-    grid-template-areas:"maindonaciones"
-                        "donacionformula"
-                        "recuerdo"
-    ;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-}
+
 .laquetiro{
-    margin: 18px;
-    margin-bottom: 10px;
-    padding-right: 500px;
+    margin: 13px 0px 0px 37px;
+    padding: 2px 41px 5px 0px;
 }
 .titulopago{
-    padding-left: 58px;
+    padding-left: 16px;
+    padding-top: 15px;
 }
 .donacionformula{
     display: grid;
     grid-template-rows: auto;
-    margin: 1% 29% 1% 26%;
+    margin: 2% 23% 2% 18%;
 }
 .donacion{
     border: 1px black solid;
-    font-size: 20px;
+    font-size: 14px;
     height: auto;
-    width: 100%;
+    width: 95%;
     border-radius: 20px;
     display: grid;
     grid-template-areas: auto;
@@ -107,32 +99,33 @@ p{
 }
 .donacion .facturacion{
     display: flex;
-    height: 580px;
+    height: 550px;
     flex-direction: column;
-    align-items: flex-start;
+    padding-left: 10px;
     justify-content: space-between;
-    padding-left: 20px;
+    align-items: flex-start;
+    width: 0px;
 }
 .facturacion div{
     display: flex;
+    flex-direction: column;
 }
+
 .botonform{
-    padding-bottom: 0%;
-    margin-bottom: 3%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 .recuerdo p{
     padding: 13px;
 }
 
-
 /* reseñas */
 .reviews{
     margin: 3%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 15% 16% 18% 19% 18% auto;
+    display: flex;
+    flex-direction: column;
     padding: 0% 6% 0% 2%;
-    margin-bottom: auto;
+    margin-bottom: 40px;
 }
 .reviews p{
     padding: 1% 0% 0% 6%;
@@ -141,6 +134,16 @@ p{
 }
 .reviews h3{
     padding:1% 0% 0% 2%;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews .review-item:not(:last-child) {
+    margin-bottom: 48px;
 }
 /* contacto */
 .maincontact{
@@ -190,7 +193,7 @@ p{
 }
 /* biografia */
 .mainbiograph{
-    margin: 40px 190px;
+    margin: 21px 50px;
     padding: 0px;
     text-align: center;
     letter-spacing: 1px;
@@ -201,18 +204,12 @@ p{
 }
 
 /* pie de pagina */
-.pie{
+.pie {
     background-color: black;
     color: azure;
-    width: 100%;
-    height: 100px;
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
-.copy{
-    padding-top: 67px;
-    padding-left: 30px;
     display: flex;
+    padding: 24px;
+    flex-direction: column;
 }
 
 .linksreferidos{
@@ -220,4 +217,73 @@ p{
     padding-bottom: 0px;
     display: flex;
     justify-content: flex-end;
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+    .review-item {
+        flex-direction: row;
+    }
+    /* biografia */
+    .mainbiograph{
+        margin: 40px 190px;
+        padding: 0px;
+        text-align: center;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+    .mainbiograph h3{
+        padding: 12px 0px;
+    }
+    /* donaciones */
+    .todogrid{
+        display: grid;
+        grid-template-areas:"maindonaciones"
+                            "donacionformula"
+                            "recuerdo"
+        ;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .laquetiro{
+        margin: 18px;
+        margin-bottom: 10px;
+        padding-right: 500px;
+    }
+    .titulopago{
+        padding-left: 58px;
+    }
+    .donacionformula{
+        display: grid;
+        grid-template-rows: auto;
+        margin: 1% 29% 1% 26%;
+    }
+    .donacion{
+        border: 1px black solid;
+        font-size: 20px;
+        height: auto;
+        width: 100%;
+        border-radius: 20px;
+        display: grid;
+        grid-template-areas: auto;
+        position:relative;
+    }
+    .donacion .facturacion{
+        display: flex;
+        height: 580px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-left: 20px;
+    }
+    .facturacion div{
+        display: flex;
+    }
+    .botonform{
+        padding-bottom: 0%;
+        margin-bottom: 3%;
+    }
+    .recuerdo p{
+        padding: 13px;
+    }
 }
