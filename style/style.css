@@ -9,6 +9,7 @@ body{
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 /* cabecera y navegador */
 .titulobarra{
@@ -75,22 +76,54 @@ p{
     border: 10px;
     margin: 0px;
 }
-.fotitostrns{
+
+.fotitostrns {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
+
+.fotitostrns a {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    margin-bottom: 24px;
+    text-align: center;
+    width: 256px;
+    height: 531px;
+}
+
+.fotitostrns .cover {
+    width: 100%;
+}
+
 .fotitostrns img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition-property: all;
-    transition-duration: 1.2s;
+    transition-duration: .8s;
 }
-.fotitostrns img{
-    padding: 0px 61px;
-    padding-bottom: 36px;
+
+.fotitostrns img {
     transition: 1s;
+    width: 100%;
+    height: auto;
 }
+
 .fotitostrns:hover > :not(:hover){
     opacity: .4;
+}
+
+.fotitostrns .colapsado {
+    position: block;
+    padding: 12px;
+    text-align: left;
+    font-weight: 700;
+    transition: .3s;
+    background: #FFF;
 }
 
 /* donaciones */
@@ -245,6 +278,20 @@ p{
     .review-item {
         flex-direction: row;
     }
+
+    .fotitostrns a {
+        overflow: hidden;
+    }
+
+    .fotitostrns a .colapsado {
+        position: absolute;
+        top: 100%;
+    }
+
+    .fotitostrns a:hover .colapsado {
+        transform: translateY(-100%);
+    }
+
     /* biografia */
     .mainbiograph{
         margin: 40px 190px;
@@ -395,5 +442,13 @@ p{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .fotitostrns a{
+        height: 540px;
+    }
+}
+@media (min-width: 1024px){
+    .fotitostrns a{
+        height: 405px;
     }
 }
